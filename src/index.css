@@ -26,18 +26,23 @@ ol, ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 100px;
+  transition: all 2s ease;
+  border: 0px;
+}
+
+.square:hover{
+  background:white;
+  transition-duration: 2s;
 }
 
 .square:focus {
@@ -50,9 +55,28 @@ ol, ul {
 
 .game {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  /*width: 100%;*/
+  margin: 20px;
 }
 
 .game-info {
   margin-left: 20px;
+}
+
+.button{
+  border: 0px;
+  padding: 15px;
+  background: linear-gradient(94deg, rgba(242,189,231,1) 0%, rgba(255,244,168,1) 100%);
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: all 1s ease;
+  
+}
+
+.button:hover{
+  transform: translateY(-10px);
+  box-shadow: 2px 14px 70px -5px rgba(0,0,0,0.5);
+  transition-duration: 1s;
+
 }
